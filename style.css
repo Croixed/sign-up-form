@@ -38,10 +38,9 @@ body {
   font-family: 'Poppins';
   color: white;
   
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */  /*  */ /*  */
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
   font-weight: bold;
-
-  /* top: 40%; */
 }
 
 .content-right {
@@ -49,7 +48,7 @@ body {
   color: white;
   flex: 1;
   height: 100vh;
-  /*  */
+  /* there has to be a better way than 100vh, it requires the @media at the bottom */
 }
 
 .header {
@@ -150,7 +149,7 @@ a:visited{
     width: 100%;
     height: 200px;
     background-size: 100%;
-    background-position: bottom;
+    background-position: 0px -400px;
   }
 
   .header {
@@ -178,6 +177,7 @@ a:visited{
   }
 }
 
+/* using this because there's white space if I don't */
 @media only screen and (max-height: 740px) {
   .content-right {
     height: auto;
