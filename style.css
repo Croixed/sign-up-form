@@ -59,9 +59,33 @@ body {
 
 .form-container {
   background-color: #021e29;
-  margin: 0px 20px;
+  margin: 0px 30px;
+  padding: 15px 20px;
 }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container div {
+  width: 48%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+input {
+  background-color: #011118;
+  color: white;
+}
+
+
+.btn-container {
+  padding: 2rem 4rem;
+}
 
 
 

@@ -23,7 +23,7 @@
       </div>
 
       <div class="form-container">
-        <form action="" method="post">
+        <form id="form" action="http://httpbin.org/post" method="post">
           <div>
             <label for="first-name">First Name</label>
             <input type="text" name="first-name" id="first-name">
@@ -36,10 +36,25 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
           </div>
+          <div>
+            <label for="phone-num">Phone</label>
+            <input type="tel" name="phone-num" id="phone-num">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="password" id="confirm-password">
+          </div>
         </form>
       </div>
       
-      <div class="btn-container"></div>
+      <div class="btn-container">
+        <button form="form" type="submit">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
     </div>
 
   </div>
