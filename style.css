@@ -70,7 +70,6 @@ form {
 
 .form-container div {
   width: 48%;
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
 }
@@ -106,5 +105,10 @@ input {
   .img-banner {
     width: 100%;
     top: 50px;
+  }
+
+  .form-container div {
+    width: 98%;
+    text-align: center;
   }
 }
