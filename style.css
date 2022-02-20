@@ -48,7 +48,8 @@ body {
   background-color: var(--color-bg);
   color: white;
   flex: 1;
-  height: auto;
+  height: 100vh;
+  /*  */
 }
 
 .header {
@@ -174,5 +175,11 @@ a:visited{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media only screen and (max-height: 740px) {
+  .content-right {
+    height: auto;
   }
 }
