@@ -10,12 +10,14 @@ body {
   margin: 0;
 }
 
-
 .content {
   display: flex;
 }
 
 .content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   width: 35vw;
   background-image: url("images/city.jpg");
@@ -39,12 +41,8 @@ body {
   font-size: 2.3rem;
   font-weight: bold;
 
-  top: 40%;
+  /* top: 40%; */
 }
-
-
-
-
 
 .content-right {
   background-color: var(--color-bg);
@@ -102,6 +100,21 @@ input {
 
 button {
   font-family: 'Montserrat';
+  font-size: 1.2em;
+  font-weight: bold;
+
+  padding: 5px;
+
+  background-color: cyan;
+  color: var(--color-bg);
+
+  border: cyan solid 3px;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: var(--color-bg);
+  color: cyan;
 }
 
 
@@ -139,6 +152,9 @@ a:visited{
     background-position: bottom;
   }
 
+  .header {
+    text-align: center;
+  }
 
   .img-banner {
     width: 100%;
@@ -152,5 +168,11 @@ a:visited{
 
   legend {
     text-align: center;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
