@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 :root {
-  --color-bg: #0A9396;
+  --color-bg: #001219;
 }
 
 body {
@@ -27,28 +30,46 @@ body {
   width: 100%;
   position: absolute;
 
-  background-color: rgba(112, 112, 112, 0.5);
+  background-color: rgba(10, 10, 10, 0.78);
+  font-family: 'Poppins';
   color: white;
   
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
 
   top: 40%;
 }
 
 
+
+
+
 .content-right {
   background-color: var(--color-bg);
+  color: white;
   flex: 1;
   height: 100vh;
 }
+
+.header {
+  font-family: 'lato';
+  font-size: 1.3rem;
+  padding: 4rem;
+}
+
+.form-container {
+  background-color: #021e29;
+  margin: 0px 20px;
+}
+
+
 
 
 
 @media only screen and (max-width: 700px) {
   .content {
     flex-direction: column;
-    height: 200vh;
+    height: 130vh;
   }
 
   .content-left {
@@ -57,7 +78,7 @@ body {
     background-size: 100%;
   }
 
-  /* fix this later! **************** */
+
   .img-banner {
     width: 100%;
     top: 50px;
