@@ -1,0 +1,60 @@
+:root {
+  --color-bg: #0A9396;
+}
+
+body {
+  margin: 0;
+}
+
+
+.content {
+  display: flex;
+}
+
+.content-left {
+  position: relative;
+  width: 35vw;
+  background-image: url("images/city.jpg");
+  background-size: cover;
+}
+
+.img-banner {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+
+  background-color: rgba(12, 12, 12, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+
+  top: 40%;
+}
+
+
+.content-right {
+  background-color: var(--color-bg);
+  flex: 1;
+  height: 100vh;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .content-left {
+    width: 97vw;
+    height: 200px;
+    background-size: 100%;
+  }
+
+  /* fix this later! **************** */
+  .img-banner {
+    width: 97vw;
+  }
+}
