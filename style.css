@@ -48,11 +48,17 @@ body {
   background-color: var(--color-bg);
   color: white;
   box-sizing: border-box;
-  border-top: 8px solid var(--color-accent);
+
+  border-top-style: solid;
+  border-width: 8px;
 
   flex: 1;
   height: 100vh;
   /* there has to be a better way than 100vh, it requires the @media at the bottom */
+}
+
+.with-gradient {
+  border-image: linear-gradient(90deg, var(--color-accent-sub), var(--color-accent), var(--color-accent-sub)) 1;
 }
 
 .header {
@@ -110,16 +116,16 @@ button {
 
   padding: 5px;
   
-  background-color: var(--color-accent-sub);
+  background-color: var(--color-accent);
   color: var(--color-bg);
 
-  border: var(--color-accent-sub) solid 3px;
+  border: var(--color-accent) solid 3px;
   border-radius: 2px;
 }
 
 button:hover {
   background-color: var(--color-bg);
-  color: var(--color-accent-sub);
+  color: var(--color-accent);
 }
 
 
