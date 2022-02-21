@@ -4,6 +4,8 @@
 
 :root {
   --color-bg: #001219;
+  --color-accent-sub: rgb(63, 160, 225);
+  --color-accent: rgb(81, 202, 243);
 }
 
 body {
@@ -45,6 +47,9 @@ body {
 .content-right {
   background-color: var(--color-bg);
   color: white;
+  box-sizing: border-box;
+  border-top: 8px solid var(--color-accent);
+
   flex: 1;
   height: 100vh;
   /* there has to be a better way than 100vh, it requires the @media at the bottom */
@@ -62,6 +67,7 @@ body {
   padding: 15px 20px;
   box-shadow: rgba(88, 88, 122, 0.65) 0px 0px 18px;
   border-radius: 8px;
+  border-left: 8px solid var(--color-accent);
 }
 
 form {
@@ -103,17 +109,17 @@ button {
   font-weight: bold;
 
   padding: 5px;
-
-  background-color: cyan;
+  
+  background-color: var(--color-accent-sub);
   color: var(--color-bg);
 
-  border: cyan solid 3px;
+  border: var(--color-accent-sub) solid 3px;
   border-radius: 2px;
 }
 
 button:hover {
   background-color: var(--color-bg);
-  color: cyan;
+  color: var(--color-accent-sub);
 }
 
 
@@ -158,6 +164,11 @@ a:visited{
   .img-banner {
     width: 100%;
     top: 50px;
+  }
+
+  .form-container {
+    border-top: 8px solid var(--color-accent);
+    border-left: none;
   }
 
   .form-container div {
